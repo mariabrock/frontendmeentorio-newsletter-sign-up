@@ -1,0 +1,83 @@
+:root {
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+    min-height: 100vh;
+    font-size: 16px;
+    background-color: var(--dark-slate-grey);
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+ul, li {
+    list-style: none;
+    padding: .5rem 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+button {
+    border: none;
+    margin-top: .5rem;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: hsl(224, 30%, 27%);
+    color: hsl(0, 0%, 100%);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+input {
+    margin-top: .5rem;
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: left;
+}
+
+label {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.card {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border-radius: 30px;
+    max-width: 900px;
+    margin-left: 30rem;
+    margin-top: 5rem;
+}
+
+.left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 3rem;
+}
