@@ -3,6 +3,7 @@
     --charcoal-grey: hsl(235, 18%, 26%);
     --grey: hsl(231, 7%, 60%);
     --white: hsl(0, 0%, 100%);
+    --tomato: hsl(4, 100%, 67%);
 }
 
 * {
@@ -48,8 +49,13 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: var(--tomato);
+}
+
 input {
     margin-top: .5rem;
+    margin-bottom: .5rem;
     padding: 14px 20px;
     text-decoration: none;
     display: inline-block;
@@ -126,6 +132,10 @@ label {
     margin: 3rem;
 }
 
+.mobile {
+    display: none;
+}
+
 .attribution {
     color: var(--white);
     margin-top: 2rem;
@@ -135,4 +145,27 @@ label {
 }
 .attribution a {
     color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+    html, body {
+        background-color: var(--white);
+    }
+    .card {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    #mobile {
+        display: block;
+    }
+    #desktop {
+        display: none;
+    }
+    .attribution {
+        color: black;
+    }
+    .success {
+        padding: 2rem;
+    }
 }
