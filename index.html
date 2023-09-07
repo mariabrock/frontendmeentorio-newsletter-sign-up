@@ -37,14 +37,19 @@
                     </li>
                 </ul>
 
-                <form action="">
-                    <label for="email">Email Address</label>
+                <div  class="fake-form">
+                    <div class="text">
+                        <label for="email">Email Address</label>
+                        <span id="error-msg"></span>
+                    </div>
+
                     <input type="text"
                         id="email"
                         name="email"
-                        placeholder="email@company.com">
-                    <button>Subscribe to Monthly Newsletter</button>
-                </form>
+                        placeholder="email@company.com"
+                        required>
+                    <button class="button submit-btn" type="submit">Subscribe to Monthly Newsletter</button>
+                </div>
             </div>
             <img src="./assets/images/illustration-sign-up-desktop.svg" alt="">
         </div>
@@ -53,12 +58,18 @@
             <div class="message">
                 <img class="img-success"  src="./assets/images/icon-success.svg" alt="">
                 <h1>Thanks for subscribing!</h1>
-                <p>A confirmation email has been sent to <span class="user-email">{{ email }}</span>.
+                <p>A confirmation email has been sent to <span class="user-email"></span>.
                     Please open it and click the button inside to confirm your subscription.</p>
             </div>
-            <button>Dismiss Message</button>
+            <button class="button dismiss-btn">Dismiss Message</button>
+        </div>
+
+        <div class="attribution">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+            Coded by <a href="https://github.com/mariabrock">Maria Brock</a>.
         </div>
     </div>
+
     <script type="module" src="./main.js"></script>
 </body>
 </html>

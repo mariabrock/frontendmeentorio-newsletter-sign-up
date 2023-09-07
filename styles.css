@@ -28,7 +28,7 @@ ul, li {
     padding: .5rem 0;
 }
 
-form {
+.fake-form {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
@@ -55,7 +55,6 @@ input {
     display: inline-block;
     border-radius: 10px;
     font-size: 16px;
-    cursor: pointer;
     text-align: left;
 }
 
@@ -64,13 +63,23 @@ label {
     font-weight: 700;
 }
 
+.valid {
+    color: #00ff00;
+    margin-top: 10px;
+}
+
+.invalid {
+    color: #ff2851;
+    margin-top: 10px;
+}
+
 .card {
     background-color: var(--white);
     display: flex;
     justify-content: center;
     padding: 1rem;
     border-radius: 30px;
-    margin-left: 30rem;
+    margin-left: 33rem;
     margin-top: 5rem;
 }
 
@@ -85,6 +94,7 @@ label {
     flex-direction: column;
     justify-content: center;
     padding: 3rem;
+    margin-left: 47rem;
 }
 
 .img-success {
@@ -99,9 +109,30 @@ label {
     margin-bottom: 2rem;
 }
 
+.text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#error-msg {
+    font-size: 10px;
+}
+
 .left-side {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 3rem;
+}
+
+.attribution {
+    color: var(--white);
+    margin-top: 2rem;
+    font-size: 11px;
+    text-align: center;
+    padding: 1rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
 }
