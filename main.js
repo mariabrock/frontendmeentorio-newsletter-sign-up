@@ -1,7 +1,5 @@
 const submitBtn = document.querySelector('.submit-btn');
 const dismissBtn = document.querySelector('.dismiss-btn');
-const emailInput = document.querySelector('#email');
-const userEmail = emailInput.value;
 const successCard = document.querySelector('.success');
 const previewCard = document.querySelector('.preview');
 // const fakeForm = document.querySelector('.fake-form');
@@ -27,7 +25,9 @@ const previewCard = document.querySelector('.preview');
 // })
 
 submitBtn.addEventListener('click', () => {
- if(userEmail === ' ') {
+ const emailInput = document.querySelector('#email');
+ const userEmail = emailInput.value;
+ if(userEmail === '') {
 	 alert("Please enter an email address!")
  } else {
   console.log(userEmail);
