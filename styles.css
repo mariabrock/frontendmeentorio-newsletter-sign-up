@@ -3,6 +3,7 @@
     --charcoal-grey: hsl(235, 18%, 26%);
     --grey: hsl(231, 7%, 60%);
     --white: hsl(0, 0%, 100%);
+    --tomato: hsl(4, 100%, 67%);
 }
 
 * {
@@ -28,7 +29,7 @@ ul, li {
     padding: .5rem 0;
 }
 
-form {
+.fake-form {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
@@ -48,14 +49,18 @@ button {
     cursor: pointer;
 }
 
+button:hover {
+    background-color: var(--tomato);
+}
+
 input {
     margin-top: .5rem;
+    margin-bottom: .5rem;
     padding: 14px 20px;
     text-decoration: none;
     display: inline-block;
     border-radius: 10px;
     font-size: 16px;
-    cursor: pointer;
     text-align: left;
 }
 
@@ -64,13 +69,23 @@ label {
     font-weight: 700;
 }
 
+.valid {
+    color: #00ff00;
+    margin-top: 10px;
+}
+
+.invalid {
+    color: #ff2851;
+    margin-top: 10px;
+}
+
 .card {
     background-color: var(--white);
     display: flex;
     justify-content: center;
     padding: 1rem;
     border-radius: 30px;
-    margin-left: 30rem;
+    margin-left: 33rem;
     margin-top: 5rem;
 }
 
@@ -85,6 +100,7 @@ label {
     flex-direction: column;
     justify-content: center;
     padding: 3rem;
+    margin-left: 47rem;
 }
 
 .img-success {
@@ -99,9 +115,57 @@ label {
     margin-bottom: 2rem;
 }
 
+.text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#error-msg {
+    font-size: 10px;
+}
+
 .left-side {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 3rem;
+}
+
+.mobile {
+    display: none;
+}
+
+.attribution {
+    color: var(--white);
+    margin-top: 2rem;
+    font-size: 11px;
+    text-align: center;
+    padding: 1rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 600px) {
+    html, body {
+        background-color: var(--white);
+    }
+    .card {
+        margin: 0;
+        padding: 0;
+        flex-direction: column;
+    }
+    #mobile {
+        display: block;
+    }
+    #desktop {
+        display: none;
+    }
+    .attribution {
+        color: black;
+    }
+    .success {
+        padding: 2rem;
+    }
 }
