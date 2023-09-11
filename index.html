@@ -38,19 +38,18 @@
                     </li>
                 </ul>
 
-                <div  class="fake-form">
-                    <div class="text">
+                <form  id="form" action="#">
+                    <div id="input-control">
                         <label for="email">Email Address</label>
                         <span id="error-msg"></span>
+                        <input type="email"
+                            id="email"
+                            name="email"
+                            placeholder="email@company.com"
+                            required>
+                        <button class="button submit-btn" type="submit">Subscribe to Monthly Newsletter</button>
                     </div>
-
-                    <input type="text"
-                        id="email"
-                        name="email"
-                        placeholder="email@company.com"
-                        required>
-                    <button class="button submit-btn" type="submit">Subscribe to Monthly Newsletter</button>
-                </div>
+                </form>
             </div>
             <img src="./assets/images/illustration-sign-up-desktop.svg" alt="" id="desktop">
         </div>

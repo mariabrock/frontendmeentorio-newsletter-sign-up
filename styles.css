@@ -29,7 +29,7 @@ ul, li {
     padding: .5rem 0;
 }
 
-.fake-form {
+#input-control {
     display: flex;
     flex-direction: column;
     margin-top: 2rem;
@@ -70,13 +70,13 @@ label {
 }
 
 .valid {
+    border-color: #00ff00;
     color: #00ff00;
-    margin-top: 10px;
 }
 
 .invalid {
+    border-color: #ff2851;
     color: #ff2851;
-    margin-top: 10px;
 }
 
 .card {
